@@ -1,11 +1,10 @@
 
-const myDiv = document.getElementById('myDiv');
-myDiv.style.display = 'grid';
 const containerEl = document.querySelector('.container');
 
-let numOfDivs = prompt('how many squares do you want to put?',16);
-myDiv.style.gridRow = `repeat(${numOfDivs},50px)`;
-myDiv.style.gridTemplateColumns = `repeat(${numOfDivs},50px)`;
+let numOfDivs = prompt('how many squares do you want to put?',10);
+containerEl.style.display = 'grid';
+containerEl.style.gridTemplateColumns = `repeat(${numOfDivs},50px)`;
+containerEl.style.gridTemplateRows = `repeat(${numOfDivs},50px)`;
 
 let createDivs = (num) => {
 
@@ -18,14 +17,12 @@ let createDivs = (num) => {
         containerEl.appendChild(div);
     };
 
-    document.querySelectorAll('.square').forEach(item => {
-        item.addEventListener('mouseover', () => {
-        item.setAttribute('style','background-color:blue;');
-        });
-    });
+    a = document.querySelectorAll('.square');
+    for(i in a) {
+        a[i].onmouseover=function(){this.setAttribute('style','background-color:blue;');}
+    };
+
 };
-
-
 
 createDivs(numOfDivs);
 
