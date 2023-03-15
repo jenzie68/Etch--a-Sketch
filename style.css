@@ -1,6 +1,50 @@
+body {
+    background-image: url(background-ghibli-studio.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.position {
+    display: grid;
+    grid-template-columns: 1;
+    gap: 15px;
+    margin-right: 100px;
+    margin-top: 180px ;
+    padding: 150px 50px;
+    border-radius: 5%;
+    background-color: palegoldenrod;
+}
+
 
 .container {
-    margin-top: 50px;
+    display: grid;
+    height: 500px;
+    width: 500px;
+    border-style: double;
+    border-color: aquamarine;
+    margin-top: 10%;
 };
+
+.square {
+    height: 100%;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
 
 
