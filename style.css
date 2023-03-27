@@ -1,28 +1,43 @@
+@font-face {
+    font-family: 'MemphisRiver';
+    src: url(custom-fonts/fonts/MemphisRiver.ttf);
+}
+
 body {
     background-image: url(background-ghibli-studio.png);
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
+}
 
+h1 {
+    font-size: 90px;
+    font-family: "MemphisRiver",sans-serif;
+    font-weight: 300;
+    color: rgb(236, 236, 166);
+}
+
+.grandparent-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
 .parent-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    gap: 100px;
 }
 
 .position {
     display: grid;
     grid-template-columns: 1;
     gap: 15px;
-    margin-right: 100px;
-    margin-top: 180px ;
     padding: 150px 50px;
-    border-radius: 5%;
+    border-radius: 2%;
     background-color: palegoldenrod;
 }
-
 
 .container {
     display: grid;
@@ -30,12 +45,18 @@ body {
     width: 500px;
     border-style: double;
     border-color: aquamarine;
-    margin-top: 10%;
 };
 
 .square {
     height: 100%;
     width: 100%;
+}
+
+#new-grid,
+#color-change,
+#reset-all {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 
